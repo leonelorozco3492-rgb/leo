@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Señor de la Guerra — Armería histórica y militaria de época</title>
+<meta name="description" content="Señor de la Guerra: armería temática de la Segunda Guerra Mundial. Piezas históricas, réplicas, munición de colección y equipo militar de época.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/css/styles .css">
+</head>
+<body>
+
+<!-- ===== HEADER / NAV ===== -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav" aria-label="Navegación principal">
+    <a href="#hero" class="nav__brand" aria-label="Señor de la Guerra — inicio">
+      <svg class="nav__logo" viewBox="0 0 64 64" width="42" height="42" role="img" aria-hidden="true">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="var(--color-primary)" stroke-width="1.4"/>
+        <circle cx="32" cy="32" r="25" fill="none" stroke="var(--color-primary)" stroke-width="0.8" opacity="0.6"/>
+        <polygon points="32,10 33.9,15.4 39.6,15.5 35.0,19.0 36.7,24.5 32,21.2 27.3,24.5 29.0,19.0 24.4,15.5 30.1,15.4" fill="var(--color-accent)"/>
+        <g stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round">
+          <line x1="17" y1="49" x2="47" y2="35"/>
+          <line x1="17" y1="35" x2="47" y2="49"/>
+        </g>
+        <rect x="14.5" y="47" width="6" height="3.4" rx="0.6" fill="var(--color-primary)" transform="rotate(-27 17.5 48.7)"/>
+        <rect x="43.5" y="47" width="6" height="3.4" rx="0.6" fill="var(--color-primary)" transform="rotate(27 46.5 48.7)"/>
+      </svg>
+      <span class="nav__brand-text">SEÑOR<em>DE LA GUERRA</em></span>
+    </a>
+
+    <ul class="nav__links" id="navLinks">
+      <li><a href="#categorias">Catálogo</a></li>
+      <li><a href="#productos">Piezas destacadas</a></li>
+      <li><a href="#nosotros">Historia</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="nav__actions">
+      <button type="button" class="btn btn--ghost" data-modal-open="loginModal">Iniciar sesión</button>
+      <button type="button" class="btn btn--solid" data-modal-open="registerModal">Registrarse</button>
+      <button type="button" class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Armería histórica · Frente de 1943</p>
+        <h1 class="hero__title">
+          <span class="plate">SEÑOR</span>
+          <span class="plate plate--accent">DE LA GUERRA</span>
+        </h1>
+        <p class="hero__slogan">"El acero no olvida a quien lo forjó."</p>
+        <p class="hero__lead">Piezas, réplicas y equipo de inspiración militar de la Segunda Guerra Mundial: fusiles de cerrojo, escopetas de trinchera, munición de colección y crónicas de cada unidad que las portó.</p>
+        <div class="hero__cta">
+          <a href="#productos" class="btn btn--solid btn--lg">Ver arsenal</a>
+          <a href="#contacto" class="btn btn--outline btn--lg">Hablar con un historiador</a>
+        </div>
+      </div>
+
+      <aside class="hero__panel reveal" aria-label="Ficha técnica de la armería">
+        <h2 class="hero__panel-title">Bitácora de operaciones</h2>
+        <dl class="spec-list">
+          <div class="spec-list__row">
+            <dt>Piezas catalogadas</dt>
+            <dd><span class="counter" data-target="462">0</span>+ referencias</dd>
+          </div>
+          <div class="spec-list__row">
+            <dt>Depósitos activos</dt>
+            <dd><span class="counter" data-target="2">0</span> en Lima</dd>
+          </div>
+          <div class="spec-list__row">
+            <dt>Años de trinchera</dt>
+            <dd><span class="counter" data-target="9">0</span> años</dd>
+          </div>
+          <div class="spec-list__row">
+            <dt>Asesoría</dt>
+            <dd>Con archivo histórico incluido</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORÍAS ===== -->
+  <section class="categorias" id="categorias">
+    <div class="section-head reveal">
+      <p class="eyebrow">Catálogo</p>
+      <h2>Cuatro frentes, un mismo archivo</h2>
+    </div>
+
+    <div class="cat-grid">
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-largas/480/320" alt="Fusiles largos de época en exhibición" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 01</span>
+          <h3>Armas largas</h3>
+          <p>Fusiles de cerrojo y escopetas de trinchera para colección y reenactment.</p>
+        </div>
+      </article>
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-cortas/480/320" alt="Pistolas de época sobre mesa de madera" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 02</span>
+          <h3>Armas cortas</h3>
+          <p>Pistolas y revólveres homologados de inspiración histórica.</p>
+        </div>
+      </article>
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-opticas/480/320" alt="Miras y accesorios militares antiguos" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 03</span>
+          <h3>Ópticas y accesorios</h3>
+          <p>Miras, fundas de cuero y correas fabricadas como en la posguerra.</p>
+        </div>
+      </article>
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-municion/480/320" alt="Cajas de munición de colección" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 04</span>
+          <h3>Munición</h3>
+          <p>Calibres de práctica y colección, con trazabilidad de lote certificada.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTOS DESTACADOS ===== -->
+  <section class="productos" id="productos">
+    <div class="productos__layout">
+      <div class="productos__main">
+        <div class="section-head reveal">
+          <p class="eyebrow">Arsenal</p>
+          <h2>Piezas destacadas del depósito</h2>
+        </div>
+
+        <div class="prod-grid">
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-01/500/340" alt="Carabina de cerrojo Serie NORTH 223" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Carabina Serie NORTH 223</h3>
+              <p class="prod-card__meta">Cal. 223 Rem · 30 RD</p>
+              <p class="prod-card__price">S/ 10,000.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-02/500/340" alt="Escopeta de trinchera ETRO Pump Action" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta ETRO Pump Action</h3>
+              <p class="prod-card__meta">Cal. 12GA · 24" · 5RD</p>
+              <p class="prod-card__price">S/ 1,800.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-03/500/340" alt="Escopeta táctica CY Tactical Black" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta CY Tactical Black</h3>
+              <p class="prod-card__meta">Cal. 12GA · 18.5" · 7RD</p>
+              <p class="prod-card__price">S/ 4,240.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-04/500/340" alt="Escopeta con culata de madera NEO Walnut" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta NEO Walnut</h3>
+              <p class="prod-card__meta">Cal. 12GA · 28" · 4RD</p>
+              <p class="prod-card__price">S/ 4,200.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-05/500/340" alt="Escopeta camuflada NEO X Camo Bronz" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta NEO X Camo Bronz</h3>
+              <p class="prod-card__meta">Cal. 12GA · 28" · 5RD</p>
+              <p class="prod-card__price">S/ 5,000.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-06/500/340" alt="Escopeta sintética NEO X Synthetic" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta NEO X Synthetic</h3>
+              <p class="prod-card__meta">Cal. 12GA · 28" · 5RD</p>
+              <p class="prod-card__price">S/ 4,600.00</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="productos__aside reveal" aria-label="Garantías de compra">
+        <h3>Por qué comprar aquí</h3>
+        <ul class="trust-list">
+          <li><strong>Verificación previa.</strong> Cada pieza se revisa antes de salir del depósito.</li>
+          <li><strong>Documentación en regla.</strong> Te acompañamos en el trámite completo.</li>
+          <li><strong>Garantía escrita.</strong> Cobertura por defectos de fábrica.</li>
+          <li><strong>Retiro en tienda.</strong> San Borja y Los Olivos, Lima.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="nosotros" id="nosotros">
+    <div class="section-head reveal">
+      <p class="eyebrow">Bitácora de compra</p>
+      <h2>De la elección al retiro, en tres pasos</h2>
+    </div>
+
+    <div class="steps">
+      <article class="step reveal">
+        <span class="step__num">01</span>
+        <h3>Elegís y consultás</h3>
+        <p>Un historiador-asesor te guía según uso: colección, deporte o reenactment.</p>
+      </article>
+      <article class="step reveal">
+        <span class="step__num">02</span>
+        <h3>Verificamos documentación</h3>
+        <p>Revisamos requisitos y trámites antes de confirmar la venta.</p>
+      </article>
+      <article class="step reveal">
+        <span class="step__num">03</span>
+        <h3>Retirás en tienda</h3>
+        <p>Entrega física con prueba de funcionamiento delante tuyo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto" id="contacto">
+    <div class="contacto__panel reveal">
+      <h2>¿Buscás una pieza puntual?</h2>
+      <p>Escribinos por WhatsApp y un asesor te responde con disponibilidad, ficha histórica y precio.</p>
+      <a href="#" class="btn btn--solid btn--lg">Escribir por WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <svg class="nav__logo" viewBox="0 0 64 64" width="34" height="34" role="img" aria-hidden="true">
+        <circle cx="32" cy="32" r="29" fill="none" stroke="var(--color-primary)" stroke-width="1.4"/>
+        <polygon points="32,10 33.9,15.4 39.6,15.5 35.0,19.0 36.7,24.5 32,21.2 27.3,24.5 29.0,19.0 24.4,15.5 30.1,15.4" fill="var(--color-accent)"/>
+        <g stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round">
+          <line x1="17" y1="49" x2="47" y2="35"/>
+          <line x1="17" y1="35" x2="47" y2="49"/>
+        </g>
+      </svg>
+      <p>Señor de la Guerra<br><span>Armería histórica y militaria de época</span></p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Depósitos</h4>
+      <p>San Borja — Av. Ricardo Malachowsky 160</p>
+      <p>Los Olivos — Av. Carlos Izaguirre 521</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Enlaces</h4>
+      <a href="#">Política de privacidad</a>
+      <a href="#">Términos y referencias</a>
+      <a href="#">Libro de reclamaciones</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Síguenos</h4>
+      <div class="footer__social">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </div>
+  <p class="footer__bottom">© 2026 Señor de la Guerra. Todos los derechos reservados.</p>
+</footer>
+
+<!-- ===== MODAL: INICIAR SESIÓN ===== -->
+<dialog class="modal" id="loginModal" aria-labelledby="loginTitle">
+  <form class="modal__form" id="loginForm" novalidate>
+    <button type="button" class="modal__close" data-modal-close aria-label="Cerrar">&times;</button>
+    <p class="eyebrow">Acceso de campaña</p>
+    <h2 id="loginTitle" class="modal__title">Iniciar sesión</h2>
+
+    <div class="field">
+      <label for="loginEmail">Correo electrónico</label>
+      <input type="email" id="loginEmail" name="email" required autocomplete="email">
+    </div>
+    <div class="field">
+      <label for="loginPassword">Contraseña</label>
+      <input type="password" id="loginPassword" name="password" required minlength="6" autocomplete="current-password">
+    </div>
+
+    <button type="submit" class="btn btn--solid btn--lg modal__submit">Entrar</button>
+    <p class="modal__feedback" data-feedback aria-live="polite"></p>
+
+    <p class="modal__switch">¿No tenés cuenta?
+      <button type="button" data-modal-switch="registerModal">Regístrate aquí</button>
+    </p>
+  </form>
+</dialog>
+
+<!-- ===== MODAL: REGISTRO ===== -->
+<dialog class="modal" id="registerModal" aria-labelledby="registerTitle">
+  <form class="modal__form" id="registerForm" novalidate>
+    <button type="button" class="modal__close" data-modal-close aria-label="Cerrar">&times;</button>
+    <p class="eyebrow">Alistamiento</p>
+    <h2 id="registerTitle" class="modal__title">Crear cuenta</h2>
+
+    <div class="field">
+      <label for="registerName">Nombre completo</label>
+      <input type="text" id="registerName" name="name" required autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="registerEmail">Correo electrónico</label>
+      <input type="email" id="registerEmail" name="email" required autocomplete="email">
+    </div>
+    <div class="field">
+      <label for="registerPassword">Contraseña</label>
+      <input type="password" id="registerPassword" name="password" required minlength="6" autocomplete="new-password">
+    </div>
+    <div class="field">
+      <label for="registerPassword2">Confirmar contraseña</label>
+      <input type="password" id="registerPassword2" name="password2" required minlength="6" autocomplete="new-password">
+    </div>
+
+    <button type="submit" class="btn btn--solid btn--lg modal__submit">Crear cuenta</button>
+    <p class="modal__feedback" data-feedback aria-live="polite"></p>
+
+    <p class="modal__switch">¿Ya tenés cuenta?
+      <button type="button" data-modal-switch="loginModal">Inicia sesión</button>
+    </p>
+  </form>
+</dialog>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
