@@ -4,7 +4,7 @@ banco de armas = Flask(__name__)
 
 @banco de armas.route('/')
 def home():
-    return "hola estas en el banco de armas"
+    return render_template(home.html)
 
 if __name__ == '__main__':
     banco de armas.run(debug=True,port=6767)
