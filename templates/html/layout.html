@@ -329,22 +329,22 @@
 
 <!-- ===== MODAL: REGISTRO ===== -->
 <dialog class="modal" id="registerModal" aria-labelledby="registerTitle">
-  <form class="modal__form" id="registerForm" novalidate>
+  <form  action="{{ url_for('signup') }}"method="POST" class="modal__form" id="registerForm" novalidate>  
     <button type="button" class="modal__close" data-modal-close aria-label="Cerrar">&times;</button>
     <p class="eyebrow">Alistamiento</p>
     <h2 id="registerTitle" class="modal__title">Crear cuenta</h2>
 
     <div class="field">
       <label for="registerName">Nombre completo</label>
-      <input type="text" id="registerName" name="name" required autocomplete="name">
+      <input type="text" name="nombre" id="registerName" required autocomplete="name">
     </div>
     <div class="field">
       <label for="registerEmail">Correo electrónico</label>
-      <input type="email" id="registerEmail" name="email" required autocomplete="email">
+      <input type="email" name="correo" id="registerEmail" required autocomplete="email">
     </div>
     <div class="field">
       <label for="registerPassword">Contraseña</label>
-      <input type="password" id="registerPassword" name="password" required minlength="6" autocomplete="new-password">
+      <input type="password" name="clave" id="registerPassword" required minlength="6" autocomplete="new-password">
     </div>
     <div class="field">
       <label for="registerPassword2">Confirmar contraseña</label>
