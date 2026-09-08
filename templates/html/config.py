@@ -10,6 +10,7 @@ class Config:
 
 
 config ={
-    'development' : DevelopmetConfig
+
+    'development': DevelopmetConfig
 
 }
