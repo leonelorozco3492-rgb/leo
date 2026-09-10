@@ -1,8 +1,6 @@
 {% extends "layout.html" %}
 {% block titulo %} banco de armas - {% endblock %}
 {% block contenido %}
-
-{% endblock %}
 <main>
 
   <!-- ===== HERO ===== -->
@@ -210,107 +208,6 @@
   </section>
 
 </main>
+{% endblock %}
 
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <div class="footer__grid">
-    <div class="footer__brand">
-      <svg class="nav__logo" viewBox="0 0 64 64" width="34" height="34" role="img" aria-hidden="true">
-        <circle cx="32" cy="32" r="29" fill="none" stroke="var(--color-primary)" stroke-width="1.4"/>
-        <polygon points="32,10 33.9,15.4 39.6,15.5 35.0,19.0 36.7,24.5 32,21.2 27.3,24.5 29.0,19.0 24.4,15.5 30.1,15.4" fill="var(--color-accent)"/>
-        <g stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round">
-          <line x1="17" y1="49" x2="47" y2="35"/>
-          <line x1="17" y1="35" x2="47" y2="49"/>
-        </g>
-      </svg>
-      <p>Señor de la Guerra<br><span>Armería histórica y militaria de época</span></p>
-    </div>
 
-    <div class="footer__col">
-      <h4>Depósitos</h4>
-      <p>San Borja — Av. Ricardo Malachowsky 160</p>
-      <p>Los Olivos — Av. Carlos Izaguirre 521</p>
-    </div>
-
-    <div class="footer__col">
-      <h4>Enlaces</h4>
-      <a href="#">Política de privacidad</a>
-      <a href="#">Términos y referencias</a>
-      <a href="#">Libro de reclamaciones</a>
-    </div>
-
-    <div class="footer__col">
-      <h4>Síguenos</h4>
-      <div class="footer__social">
-        <a href="#" aria-label="Facebook">FB</a>
-        <a href="#" aria-label="Instagram">IG</a>
-        <a href="#" aria-label="YouTube">YT</a>
-      </div>
-    </div>
-  </div>
-  <p class="footer__bottom">© 2026 Señor de la Guerra. Todos los derechos reservados.</p>
-</footer>
-
-<!-- ===== MODAL: INICIAR SESIÓN ===== -->
-<dialog class="modal" id="loginModal" aria-labelledby="loginTitle">
-  <form class="modal__form" id="loginForm" novalidate>
-    <button type="button" class="modal__close" data-modal-close aria-label="Cerrar">&times;</button>
-    <p class="eyebrow">Acceso de campaña</p>
-    <h2 id="loginTitle" class="modal__title">Iniciar sesión</h2>
-
-    <div class="field">
-      <label for="loginEmail">Correo electrónico</label>
-      <input type="email" id="loginEmail" name="email" required autocomplete="email">
-    </div>
-    <div class="field">
-      <label for="loginPassword">Contraseña</label>
-      <input type="password" id="loginPassword" name="password" required minlength="6" autocomplete="current-password">
-    </div>
-
-    <button type="submit" class="btn btn--solid btn--lg modal__submit">Entrar</button>
-    <p class="modal__feedback" data-feedback aria-live="polite"></p>
-
-    <p class="modal__switch">¿No tenés cuenta?
-      <button type="button" data-modal-switch="registerModal">Regístrate aquí</button>
-    </p>
-  </form>
-</dialog>
-
-<!-- ===== MODAL: REGISTRO ===== -->
-<dialog class="modal" id="registerModal" aria-labelledby="registerTitle">
-  <form class="modal__form" id="registerForm" novalidate>
-    <button type="button" class="modal__close" data-modal-close aria-label="Cerrar">&times;</button>
-    <p class="eyebrow">Alistamiento</p>
-    <h2 id="registerTitle" class="modal__title">Crear cuenta</h2>
-
-    <div class="field">
-      <label for="registerName">Nombre completo</label>
-      <input type="text" id="registerName" name="name" required autocomplete="name">
-    </div>
-    <div class="field">
-      <label for="registerEmail">Correo electrónico</label>
-      <input type="email" id="registerEmail" name="email" required autocomplete="email">
-    </div>
-    <div class="field">
-      <label for="registerPassword">Contraseña</label>
-      <input type="password" id="registerPassword" name="password" required minlength="6" autocomplete="new-password">
-    </div>
-    <div class="field">
-      <label for="registerPassword2">Confirmar contraseña</label>
-      <input type="password" id="registerPassword2" name="password2" required minlength="6" autocomplete="new-password">
-    </div>
-
-    <button type="submit" class="btn btn--solid btn--lg modal__submit">Crear cuenta</button>
-    <p class="modal__feedback" data-feedback aria-live="polite"></p>
-
-    <p class="modal__switch">¿Ya tenés cuenta?
-      <button type="button" data-modal-switch="loginModal">Inicia sesión</button>
-    </p>
-  </form>
-</dialog>
-
-<script src="/static/js/all.min.js"></script>
-<script src="/static/js/bootstrap.bundle.js"></script>
-<script src="/static/js/script.js"></script>
-</body>
-</html>
