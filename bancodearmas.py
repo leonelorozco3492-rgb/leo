@@ -27,6 +27,52 @@ def signup():
     else: 
         return render_template('home.html')
 
+@bancodearmasApp.route('/signin', methods=['GET','POST'])
+def signin():
+    if request.method == 'POST':
+        usuario = User(0, None,request.from['correo'],request.fore['Clave'],None)
+        usuarioAutenticado =ModelUser.signin(db, usuario)
+        if usuarioAutenticado is not None:
+            login_user(usuarioAutenticado)
+            if usuarioAutenticado.clave:
+                if usuarioAutenticado.perfil == 'A':
+                    return redirect(url_for('home_html'))
+                else:
+                    return redirect(url_for('home.user'))
+            else:
+                flash("Contraseña indirecta")
+                redirect(url_for('home'))
+        else:
+            flash('Usuario no existente pa')
+            redirect(url_for('home'))
+    else: 
+         render_template('home.html')  
+
+@bancodearmasApp.route('/signout', method=['GET','POST'])
+def signout():
+    login_user()
+    return redirect(url_for('home'))
+
+ @bancodearmasApp.route('/home_admin', method=['GET','POST'])
+def home_admin():
+    return render_template('admin.html')  
+
+@bancodearmasApp.route('/home_user', method=['GET','POST'])
+def home_user():
+    return render_template('user.html')       
+  
+
+@bancodearmasApp.route('/sUsuario', methods=['GET', 'POST'])
+def sUsuario():
+    return render_template('use.html')
+
+
+@bancodearmasApp.route('/logout')
+def logout():
+    session.clear()
+    flash('Sesion cerrada.', 'success')
+    return redirect(url_for('home'))
+
 if __name__ == '__main__':
     bancodearmasApp.run(debug=True,port=6767)
 
