@@ -1,0 +1,213 @@
+{% extends "layout.html" %}
+{% block titulo %} banco de armas - {% endblock %}
+{% block contenido %}
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__grid">
+      <div class="hero__copy reveal">
+        <p class="eyebrow">Armería histórica · Frente de 1943</p>
+        <h1 class="hero__title">
+          <span class="plate">SEÑOR</span>
+          <span class="plate plate--accent">DE LA GUERRA</span>
+        </h1>
+        <p class="hero__slogan">"El acero no olvida a quien lo forjó."</p>
+        <p class="hero__lead">Piezas, réplicas y equipo de inspiración militar de la Segunda Guerra Mundial: fusiles de cerrojo, escopetas de trinchera, munición de colección y crónicas de cada unidad que las portó.</p>
+        <div class="hero__cta">
+          <a href="#productos" class="btn btn--solid btn--lg">Ver arsenal</a>
+          <a href="#contacto" class="btn btn--outline btn--lg">Hablar con un historiador</a>
+        </div>
+      </div>
+
+      <aside class="hero__panel reveal" aria-label="Ficha técnica de la armería">
+        <h2 class="hero__panel-title">Bitácora de operaciones</h2>
+        <dl class="spec-list">
+          <div class="spec-list__row">
+            <dt>Piezas catalogadas</dt>
+            <dd><span class="counter" data-target="462">0</span>+ referencias</dd>
+          </div>
+          <div class="spec-list__row">
+            <dt>Depósitos activos</dt>
+            <dd><span class="counter" data-target="2">0</span> en Lima</dd>
+          </div>
+          <div class="spec-list__row">
+            <dt>Años de trinchera</dt>
+            <dd><span class="counter" data-target="9">0</span> años</dd>
+          </div>
+          <div class="spec-list__row">
+            <dt>Asesoría</dt>
+            <dd>Con archivo histórico incluido</dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== CATEGORÍAS ===== -->
+  <section class="categorias" id="categorias">
+    <div class="section-head reveal">
+      <p class="eyebrow">Catálogo</p>
+      <h2>Cuatro frentes, un mismo archivo</h2>
+    </div>
+
+    <div class="cat-grid">
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-largas/480/320" alt="Fusiles largos de época en exhibición" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 01</span>
+          <h3>Armas largas</h3>
+          <p>Fusiles de cerrojo y escopetas de trinchera para colección y reenactment.</p>
+        </div>
+      </article>
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-cortas/480/320" alt="Pistolas de época sobre mesa de madera" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 02</span>
+          <h3>Armas cortas</h3>
+          <p>Pistolas y revólveres homologados de inspiración histórica.</p>
+        </div>
+      </article>
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-opticas/480/320" alt="Miras y accesorios militares antiguos" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 03</span>
+          <h3>Ópticas y accesorios</h3>
+          <p>Miras, fundas de cuero y correas fabricadas como en la posguerra.</p>
+        </div>
+      </article>
+      <article class="cat-card reveal">
+        <img class="cat-card__img" src="https://picsum.photos/seed/guerra-municion/480/320" alt="Cajas de munición de colección" loading="lazy" width="480" height="320">
+        <div class="cat-card__body">
+          <span class="cat-card__index">Frente 04</span>
+          <h3>Munición</h3>
+          <p>Calibres de práctica y colección, con trazabilidad de lote certificada.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTOS DESTACADOS ===== -->
+  <section class="productos" id="productos">
+    <div class="productos__layout">
+      <div class="productos__main">
+        <div class="section-head reveal">
+          <p class="eyebrow">Arsenal</p>
+          <h2>Piezas destacadas del depósito</h2>
+        </div>
+
+        <div class="prod-grid">
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-01/500/340" alt="Carabina de cerrojo Serie NORTH 223" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Carabina Serie NORTH 223</h3>
+              <p class="prod-card__meta">Cal. 223 Rem · 30 RD</p>
+              <p class="prod-card__price">S/ 10,000.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-02/500/340" alt="Escopeta de trinchera ETRO Pump Action" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta ETRO Pump Action</h3>
+              <p class="prod-card__meta">Cal. 12GA · 24" · 5RD</p>
+              <p class="prod-card__price">S/ 1,800.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-03/500/340" alt="Escopeta táctica CY Tactical Black" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta CY Tactical Black</h3>
+              <p class="prod-card__meta">Cal. 12GA · 18.5" · 7RD</p>
+              <p class="prod-card__price">S/ 4,240.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-04/500/340" alt="Escopeta con culata de madera NEO Walnut" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta NEO Walnut</h3>
+              <p class="prod-card__meta">Cal. 12GA · 28" · 4RD</p>
+              <p class="prod-card__price">S/ 4,200.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-05/500/340" alt="Escopeta camuflada NEO X Camo Bronz" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta NEO X Camo Bronz</h3>
+              <p class="prod-card__meta">Cal. 12GA · 28" · 5RD</p>
+              <p class="prod-card__price">S/ 5,000.00</p>
+            </div>
+          </article>
+
+          <article class="prod-card reveal">
+            <span class="prod-card__stamp">Nuevo</span>
+            <img class="prod-card__img" src="https://picsum.photos/seed/warlord-06/500/340" alt="Escopeta sintética NEO X Synthetic" loading="lazy" width="500" height="340">
+            <div class="prod-card__body">
+              <h3>Escopeta NEO X Synthetic</h3>
+              <p class="prod-card__meta">Cal. 12GA · 28" · 5RD</p>
+              <p class="prod-card__price">S/ 4,600.00</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <aside class="productos__aside reveal" aria-label="Garantías de compra">
+        <h3>Por qué comprar aquí</h3>
+        <ul class="trust-list">
+          <li><strong>Verificación previa.</strong> Cada pieza se revisa antes de salir del depósito.</li>
+          <li><strong>Documentación en regla.</strong> Te acompañamos en el trámite completo.</li>
+          <li><strong>Garantía escrita.</strong> Cobertura por defectos de fábrica.</li>
+          <li><strong>Retiro en tienda.</strong> San Borja y Los Olivos, Lima.</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="nosotros" id="nosotros">
+    <div class="section-head reveal">
+      <p class="eyebrow">Bitácora de compra</p>
+      <h2>De la elección al retiro, en tres pasos</h2>
+    </div>
+
+    <div class="steps">
+      <article class="step reveal">
+        <span class="step__num">01</span>
+        <h3>Elegís y consultás</h3>
+        <p>Un historiador-asesor te guía según uso: colección, deporte o reenactment.</p>
+      </article>
+      <article class="step reveal">
+        <span class="step__num">02</span>
+        <h3>Verificamos documentación</h3>
+        <p>Revisamos requisitos y trámites antes de confirmar la venta.</p>
+      </article>
+      <article class="step reveal">
+        <span class="step__num">03</span>
+        <h3>Retirás en tienda</h3>
+        <p>Entrega física con prueba de funcionamiento delante tuyo.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contacto" id="contacto">
+    <div class="contacto__panel reveal">
+      <h2>¿Buscás una pieza puntual?</h2>
+      <p>Escribinos por WhatsApp y un asesor te responde con disponibilidad, ficha histórica y precio.</p>
+      <a href="#" class="btn btn--solid btn--lg">Escribir por WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+{% endblock %}
+
+

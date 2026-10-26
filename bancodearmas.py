@@ -30,7 +30,7 @@ def signup():
 @bancodearmasApp.route('/signin', methods=['GET','POST'])
 def signin():
     if request.method == 'POST':
-        usuario = User(0, None,request.from['correo'],request.fore['Clave'],None)
+        usuario = User (0, None,request from['correo'],request.fore['Clave'],None)
         usuarioAutenticado =ModelUser.signin(db, usuario)
         if usuarioAutenticado is not None:
             login_user(usuarioAutenticado)
@@ -53,7 +53,7 @@ def signout():
     login_user()
     return redirect(url_for('home'))
 
- @bancodearmasApp.route('/home_admin', method=['GET','POST'])
+@bancodearmasApp.route('/home_admin', method=['GET','POST'])
 def home_admin():
     return render_template('admin.html')  
 

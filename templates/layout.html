@@ -16,8 +16,14 @@
 <body>
 
 
-
-    {% include "components/navbar.html" %}
+{% if current_user.is_authenticated and current_user.perfil == 'A'}
+    {% include "components/navbar_admin.html" %}
+ {% elif current_user.is_authenticated and current_user.perfil == 'U'}    
+    {% include "components/navbar_user.html" %}
+{% else %}
+     {% include "components/navbar_user.html" %}
+     {% endif %}
+     
 <!-- ===== HEADER / NAV ===== -->
 <header class="site-header" id="siteHeader">
   <nav class="nav" aria-label="Navegación principal">
