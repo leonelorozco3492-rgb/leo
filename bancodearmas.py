@@ -64,6 +64,15 @@ def home_user():
 
 @bancodearmasApp.route('/sUsuario', methods=['GET', 'POST'])
 def sUsuario():
+    if curent_user.perfil == 'A'
+    selUsuario = db.conection.cursor()
+    selUsuario.exacute("SELEC * FROM usuario")
+    u=selUsuario.fetchall()
+    selUsuario.close()
+    return render_template('user.html', usuario=u)
+else:
+flash('no tiene permiso para acceder')
+retur redirect(url_for('home'))                  
     return render_template('use.html')
 
 
@@ -72,6 +81,9 @@ def logout():
     session.clear()
     flash('Sesion cerrada.', 'success')
     return redirect(url_for('home'))
+
+
+
 
 if __name__ == '__main__':
     bancodearmasApp.run(debug=True,port=6767)

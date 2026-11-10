@@ -314,7 +314,17 @@
     <button type="button" class="modal__close" data-modal-close aria-label="Cerrar">&times;</button>
     <p class="eyebrow">Acceso de campaña</p>
     <h2 id="loginTitle" class="modal__title">Iniciar sesión</h2>
-
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    
+    {% for message in messages %}
+    <div class="alert theme-danger" role="alert">
+  <p>{{menssage}}</p>
+</div> 
+    {% endfor %}
+    
+  {% endif %}
+  {% endwith %} 
     <div class="field">
       <label for="loginEmail">Correo electrónico</label>
       <input type="email" id="loginEmail" name="email" required autocomplete="email">
